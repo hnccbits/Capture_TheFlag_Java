@@ -1,0 +1,15 @@
+name: Main Function check
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make .testRunner executable
+        run: chmod +x testRunner
+
+      - name: Run test
+        run: ./testRunner
