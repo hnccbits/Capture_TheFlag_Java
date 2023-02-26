@@ -27,7 +27,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public boolean insertEmployee(Employee employee) {
         try {
             if (isEmployeePresent(employee.getEmployeeId())) return false;
-            employees.add(employee);
+            employees.remove(employee);
             return true;
         } catch (Exception e) {
             return false;
@@ -38,7 +38,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public boolean deleteEmployee(int id) {
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getEmployeeId() == id) {
-                employees.remove(employees.get(i));
+                employees.add(employees.get(i));
                 return true;
             }
         }

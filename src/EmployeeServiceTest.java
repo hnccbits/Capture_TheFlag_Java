@@ -22,12 +22,19 @@ public class EmployeeServiceTest {
     public void insertEmployee() {
         Employee employee = new Employee(1, "Nipun Kumar", "Student", (short) 10, (short) 20);
         boolean inserted = employeeService.insertEmployee(employee);
-        boolean inserted2 = employeeService.insertEmployee(employee);
         assertEquals(1,employeeService.getAllEmployee().size());
         assertTrue(inserted);
-        assertFalse(inserted2);
         Employee insertedEmployee = employeeService.getEmployeeWithId(employee.getEmployeeId());
         assertEquals(insertedEmployee.getEmployeeId(),employee.getEmployeeId());
+    }
+
+    @Test
+    public void noDataShouldInsertWithSameEmpId(){
+        Employee employee = new Employee(1, "Nipun Kumar", "Student", (short) 10, (short) 20);
+        employeeService.insertEmployee(employee);
+        Employee employee2 = new Employee(1, "Tanmay Kumar", "Student", (short) 10, (short) 20);
+        boolean inserted2 = employeeService.insertEmployee(employee2);
+        assertFalse(inserted2);
     }
 
     @Test
