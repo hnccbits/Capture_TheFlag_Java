@@ -1,15 +1,24 @@
-name: Main Function check
-
+name: Check Test Results
 on:
-  pull_request:
-    branches: [ main ]
+  push:
+    branches:
+      - main
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Make .testRunner executable
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Make Test Script Executable
         run: chmod +x testRunner
-
-      - name: Run test
-        run: ./testRunner
+      - name: Run Tests
+        run: ./testRunner > test-results.txt
+      - name: Check Test Results
+        run: |
+          if grep -q 'FAIL' test-results.txt; then
+            echo "Some tests have failed."
+            exit 1
+          else
+            echo "All tests have passed."
+          fi
