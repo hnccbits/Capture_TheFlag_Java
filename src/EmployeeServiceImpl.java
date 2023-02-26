@@ -27,7 +27,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public boolean insertEmployee(Employee employee) {
         try {
             if (isEmployeePresent(employee.getEmployeeId())) return false;
-//            employees.add(employee);
+            employees.add(employee);
             return true;
         } catch (Exception e) {
             return false;
