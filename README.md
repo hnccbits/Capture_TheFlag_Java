@@ -12,12 +12,13 @@ The system provides the following features:
 - Delete employee: You can delete an existing employee from the system by providing their employee ID.
 - Print all employees: You can print a list of all employees in the system, including their personal and employment details.
 
-## Prerequisite
+## Installation
+### Prerequisite
 
 - Java Development Kit (JDK) installed on the developer's system
 - Development environment like Eclipse or IntelliJ IDE
 
-## Installation
+### Setup
 
 1. Clone the repository to your local machine using a version control tool like Git.
 2. Open the cloned repository in an integrated development environment (IDE) such as IntelliJ IDEA or Eclipse.
