@@ -19,18 +19,16 @@ The system provides the following features:
 - Development environment like Eclipse or IntelliJ IDE
 
 ### Setup
+1. Fork the repository.
 
-1. Clone the repository to your local machine using a version control tool like Git.
-```
-git clone https://github.com/hnccbits/Capture_TheFlag_Java.git
-```
-2. Navigate to the project directory
+2. Clone the repository to your local machine using a version control tool like Git.
+3. Navigate to the project directory
 ```
 cd Capture_TheFlag_Java
 ```
-3. Open the cloned repository in an integrated development environment (IDE) such as IntelliJ IDEA or Eclipse.
-3. Navigate to the **`src`** folder in the project directory and locate the Main class.
-4. Run the Main class to execute the employee management system.
+4. Open the cloned repository in an integrated development environment (IDE) such as IntelliJ IDEA or Eclipse.
+5. Navigate to the **`src`** folder in the project directory and locate the Main class.
+6. Run the Main class to execute the employee management system.
 
 > Linux users can run the project by opening the terminal at the root of the project directory and executing the command **`./runner`.**
 > 
