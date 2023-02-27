@@ -21,7 +21,14 @@ The system provides the following features:
 ### Setup
 
 1. Clone the repository to your local machine using a version control tool like Git.
-2. Open the cloned repository in an integrated development environment (IDE) such as IntelliJ IDEA or Eclipse.
+```
+git clone https://github.com/hnccbits/Capture_TheFlag_Java.git
+```
+2. Navigate to the project directory
+```
+cd Capture_TheFlag_Java
+```
+3. Open the cloned repository in an integrated development environment (IDE) such as IntelliJ IDEA or Eclipse.
 3. Navigate to the **`src`** folder in the project directory and locate the Main class.
 4. Run the Main class to execute the employee management system.
 
