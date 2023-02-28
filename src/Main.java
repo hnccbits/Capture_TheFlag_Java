@@ -36,9 +36,11 @@ public class Main {
         System.out.println("Enter Employee ID:");
         int id = sc.nextInt();
         newEmployee.setEmployeeId(id);
-        System.out.println("Enter Employee Name:");
-        String name = sc.nextLine(); // Nipun Kumar
         sc.nextLine();
+        System.out.println("Enter Employee Name:");
+        String name = sc.nextLine(); 
+        
+       
         newEmployee.setEmployeeName(name);
         System.out.println("Enter Employee Designation:");
         String designation = sc.nextLine();
