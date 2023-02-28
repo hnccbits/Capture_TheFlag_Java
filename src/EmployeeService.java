@@ -9,4 +9,6 @@ public interface EmployeeService {
     Employee getEmployeeWithId(int id);
 
     ArrayList<Employee> getAllEmployee();
+
+
 }
