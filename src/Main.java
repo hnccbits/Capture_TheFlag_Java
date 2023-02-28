@@ -6,6 +6,7 @@ public class Main {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+    
         boolean isRunning = true;
         System.out.println("Welcome to the employee Management System please choose your option");
         while (isRunning) {
@@ -30,18 +31,22 @@ public class Main {
     }
 
     public static void addEmployee() {
+    	
         Employee newEmployee = new Employee();
         System.out.println("Enter Employee ID:");
         int id = sc.nextInt();
         newEmployee.setEmployeeId(id);
         System.out.println("Enter Employee Name:");
         String name = sc.nextLine(); // Nipun Kumar
+        sc.nextLine();
         newEmployee.setEmployeeName(name);
         System.out.println("Enter Employee Designation:");
         String designation = sc.nextLine();
+     
         newEmployee.setEmployeeDesignation(designation);
         System.out.println("Enter Employee Experience:");
         short experience = sc.nextShort();
+      
         newEmployee.setExperience(experience);
         System.out.println("Enter Employee Age:");
         short age = sc.nextShort();
